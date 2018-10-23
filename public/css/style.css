@@ -1,0 +1,95 @@
+body{
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #080808;
+    color: #fff;
+}
+
+/* Gobal */
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+
+.highlight {
+    color: #FB8C00;
+}
+
+.big-boi {
+    background:url('../img/mountains.jpg') no-repeat 0 -500px;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* Header */
+header {
+    padding: 0 40px 0 40px;
+    background-color: rgba(0, 000, 0, 0.6)
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 16px;
+}
+
+#icon {
+    max-width: 64px;
+    max-height: 64px;
+    grid-column: 2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 3 / 5;
+}
+
+header nav {
+    grid-column: 6 / 7;
+    margin-top: 30px;
+}
+
+header li {
+    display: inline;
+    padding: 0 16px 0 16px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header .current a {
+    color: #FB8C00;
+    font-weight: bold;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase .container {
+    padding-top: 200px;
+}
+
+#showcase h1 {
+    font-size: 60px;
+}
+
+#showcase p {
+    font-size: 24px;
+}
