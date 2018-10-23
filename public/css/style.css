@@ -77,19 +77,65 @@ header a:hover {
 
 /* Showcase */
 #showcase {
-    min-height: 600px;
+    min-height: 100vh;
     text-align: center;
     color: #fff;
+    border-bottom: 2px solid #FB8C00;
 }
 
 #showcase .container {
-    padding-top: 200px;
+    padding-top: 25vh;
 }
 
 #showcase h1 {
-    font-size: 60px;
+    font-size: 100px;
 }
 
 #showcase p {
-    font-size: 24px;
+    font-size: 36px;
+}
+
+/* Call-To-Action */
+#call-to-action {
+    height: 600px;
+}
+
+#call-to-action img {
+    width: 50%;
+    float: left;
+    border-right: 2px solid #FB8C00;
+}
+
+#call-to-action .container {
+    float: right;
+    width: 49%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#call-to-action .container-inner {
+    padding: 20px 20px 40px;
+    border: 2px solid #FB8C00;
+    width: 50%;
+    margin: auto;
+}
+
+#call-to-action h1 {
+    font-size: 36px;
+}
+
+#call-to-action p {
+    font-size: 20px;
+}
+
+#call-to-action a {
+    appearance: button;
+    background-color: #FB8C00;
+    color: #000;
+    border: none;
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
 }
