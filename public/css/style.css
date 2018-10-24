@@ -1,4 +1,4 @@
-body{
+body {
     font: 16px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
@@ -97,18 +97,24 @@ header a:hover {
 
 /* Call-To-Action */
 #call-to-action {
-    height: 600px;
+    display: flex;
+    border-bottom: 2px solid #FB8C00;
 }
 
 #call-to-action img {
-    width: 50%;
+    flex: 1;
+    width: 55%;
     float: left;
     border-right: 2px solid #FB8C00;
 }
 
 #call-to-action .container {
     float: right;
-    width: 49%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44%;
     text-align: center;
     margin-top: 150px;
 }
@@ -117,7 +123,6 @@ header a:hover {
     padding: 20px 20px 40px;
     border: 2px solid #FB8C00;
     width: 50%;
-    margin: auto;
 }
 
 #call-to-action h1 {
@@ -129,6 +134,57 @@ header a:hover {
 }
 
 #call-to-action a {
+    appearance: button;
+    background-color: #FB8C00;
+    color: #000;
+    border: none;
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* About Smiths */
+#about-smiths {
+    height: 650px;
+    display: flex;
+    border-bottom: 2px solid #FB8C00;
+}
+
+#about-smiths img {
+    width: 55%;
+    flex: 1;
+    float: right;
+    border-left: 2px solid #FB8C00;
+}
+
+#about-smiths .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 44%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#about-smiths .container-inner {
+    padding: 20px 20px 40px;
+    border: 2px solid #FB8C00;
+    width: 50%;
+}
+
+#about-smiths h1 {
+    font-size: 36px;
+}
+
+#about-smiths p {
+    font-size: 20px;
+}
+
+#about-smiths a {
     appearance: button;
     background-color: #FB8C00;
     color: #000;
