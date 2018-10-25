@@ -63,10 +63,11 @@ func addInterested(w http.ResponseWriter, req *http.Request) {
 	firstname := req.Form["firstname"][0]
 	lastname := req.Form["lastname"][0]
 	email := req.Form["email"][0]
+	customerType := req.Form["customer-type"][0]
 
-	values := "\"" + firstname + "\", \"" + lastname + "\", \"" + email + "\""
+	values := "\"" + firstname + "\", \"" + lastname + "\", \"" + email + "\", \"" + customerType + "\""
 
-	statement, err := db.Prepare("INSERT IGNORE INTO interested (firstname, lastname, email) VALUES (" + values + ");")
+	statement, err := db.Prepare("INSERT IGNORE INTO interested (firstname, lastname, email, customerType) VALUES (" + values + ");")
 	checkFatal(err)
 
 	_, err = statement.Exec()
