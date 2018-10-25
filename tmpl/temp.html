@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Forged Finds | Interest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/temp.css" />
+</head>
+
+<body>
+
+  <section id="sign-up">
+    <div class="container">
+      <h1>Forged <span class="highlight">Finds</span> Sign-Up</h1>
+      <p>Thank you for your interest in Forged Finds! Leave your name and email, and we'll be in touch soon.</p>
+      <form action="/interest" method="POST">
+        <p id="fnp">First name: </p><br>
+        <input id="fn" type="text" name="firstname"><br>
+        <p id="lnp">Last name: </p><br>
+        <input id="ln" type="text" name="lastname"><br>
+        <p id="ep">Email Address: </p><br>
+        <input id="e" type="email" name="email"><br>
+        <p id="rp">Are you a Smith, or a Customer?</p><br>
+        <input id="cr" type="radio" name="customer-type" value="Customer" checked>
+        <label id="crl" for="cr" onclick="customerClicked()">Customer</label>
+        <input id="sr" type="radio" name="customer-type" value="Smith">
+        <label id="srl" for="sr" onclick="smithClicked()">Smith</label>
+        <input id="sub-button" type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+</body>
+
+<script>
+  function customerClicked() {
+    var customer = document.getElementById('crl');
+    customer.style.color = '#FB8C00';
+    customer.style.borderBottom = '2px solid #FB8C00';
+    var smith = document.getElementById('srl');
+    smith.style.color = '#FFFFFF';
+    smith.style.borderBottom = 'none';
+  }
+
+  function smithClicked() {
+    var smith = document.getElementById('srl');
+    smith.style.color = '#FB8C00';
+    smith.style.borderBottom = '2px solid #FB8C00';
+    var customer = document.getElementById('crl');
+    customer.style.color = '#FFFFFF';
+    customer.style.borderBottom = 'none';
+  }
+</script>
+
+</html>
